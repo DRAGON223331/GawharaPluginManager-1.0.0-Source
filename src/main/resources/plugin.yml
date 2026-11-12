@@ -1,0 +1,15 @@
+name: GawharaPluginManager
+version: 1.0.0
+main: com.gawharasmp.pluginmanager.GawharaPluginManager
+api-version: '26.3'
+author: GawharaSMP
+description: Safely installs and enables new Bukkit-compatible plugins at runtime.
+commands:
+  gpm:
+    description: Manage runtime installation of new plugins
+    usage: /gpm <scan|load|list|status|help>
+    permission: gawharapm.admin
+permissions:
+  gawharapm.admin:
+    description: Allows runtime plugin installation and management
+    default: op

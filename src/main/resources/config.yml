@@ -1,0 +1,21 @@
+# GawharaPluginManager configuration
+# Put NEW Bukkit-compatible plugin JARs into plugins/dropbox/
+# They will be checked and loaded on the next scan.
+auto-scan:
+  enabled: true
+  interval-seconds: 20
+
+folders:
+  dropbox: dropbox
+  failed: dropbox/failed
+
+security:
+  # Reject a JAR if it does not contain a readable plugin.yml.
+  require-plugin-yml: true
+  # Never load a plugin whose name is already loaded. Updating an existing plugin needs restart.
+  refuse-duplicate-names: true
+  # Require all hard dependencies to be enabled before loading.
+  require-dependencies-enabled: true
+
+messages:
+  prefix: '&8[&bGawharaPM&8] &r'
